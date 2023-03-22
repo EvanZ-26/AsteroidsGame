@@ -14,7 +14,7 @@ public void keyPressed() {
     bob.hyperspace();
   }
 
-  if (key == 'c') {
+  if (key == 'w') {
     bob.accelerate(-5);
   }
   if (key == 'a') {
@@ -23,10 +23,14 @@ public void keyPressed() {
   if (key == 'd') {
     bob.turn(-10);
   }
+   if (key == 's') {
+    bob.accelerate(10);
+  }
 
 
 }
  void draw() {
+ background(0,0,0);
   bob.move();
    bob.show();
 for (int i=0; i <1000; i++) {
